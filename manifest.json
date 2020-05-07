@@ -6,7 +6,7 @@
   "author": "Maximilian Schiller",
   "content_scripts": [
       {
-        "matches": ["http://*/search*", "https://*/search*"],
+        "matches": ["http://*/*", "https://*/*"],
         "include_globs": ["http://*.google.*/search*", "https://*.google.*/search*"],
         "js": ["content_script.js"]
       }
