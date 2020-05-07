@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "HideSearchAds",
+  "description": "Hides all Google Search ads",
+  "version": "1.0.2",
+  "author": "Maximilian Schiller",
+  "content_scripts": [
+      {
+        "matches": ["http://*/search*", "https://*/search*"],
+        "include_globs": ["http://*.google.*/search*", "https://*.google.*/search*"],
+        "js": ["content_script.js"]
+      }
+    ],
+    "permissions": ["activeTab"]
+    
+}
